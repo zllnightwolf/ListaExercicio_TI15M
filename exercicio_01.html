@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício JS 01</title>
+</head>
+<body>
+    <h1>Cadastro de dados de um Professor</h1>
+    <p>Nome: <span id="nome"> </span></p>
+    <p>Endereço:<span id="endereco"> </span></p>
+    <p>Cidade:<span id="cidade"> </span></p>
+    <p>UF:<span id="UF"> </span></p>
+    <p>CEP:<span id="CEP"> </span></p>
+    <P>Telefone:<span id="telefone"> </span></P>
+    <p>CPF:<span id="CPF"> </span></p>
+    <p>RG:<span id="RG"> </span></p>
+    <p>Data de nascimento:<span id="dataNascimento"> </span></p>
+    <p>Grau de escolaridade:<span id="gEscolaridade"> </span></p>
+    <p>Curso que lesiona:<span id="cursoLeciona"> </span></p>
+    <script>
+        let nome = prompt("Digite o nome do Professor.");
+        let endereco = prompt("Digite o endereço.");
+        let cidade = prompt("Digite a cidade"); 
+        let UF = prompt("Digite a UF."); 
+        let CEP = prompt("Digite o CEP.");
+        let Telefone = prompt("Digite o Telefone.");
+        let CPF = prompt("Digite o CPF.");
+        let RG = prompt("Digite o RG.");
+        let dataNacimento= prompt("Digite a Data de Nascimento.");
+        let gEscolaridade = prompt("Digite o Grau de escolaridade.");
+        let cursoLeciona = prompt("Digite o Curso que Lesiona.");
+
+        document.getElementById("nome").innerHTML = nome;
+        document.getElementById("endereco").innerHTML = endereco;
+        document.getElementById("cidade").innerHTML = cidade;
+        document.getElementById("UF").innerHTML = UF;
+        document.getElementById("CEP").innerHTML = CEP;
+        document.getElementById("telefone").innerHTML = Telefone;
+        document.getElementById("CPF").innerHTML = CPF;
+        document.getElementById("RG").innerHTML = RG;
+        document.getElementById("dataNascimento").innerHTML = dataNacimento;
+        document.getElementById("gEscolaridade").innerHTML = gEscolaridade;
+        document.getElementById("cursoLeciona").innerHTML = cursoLeciona;
+    </script>
+</body>
+</html>
