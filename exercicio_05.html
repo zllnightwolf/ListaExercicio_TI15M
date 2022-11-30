@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício JS 05</title>
+</head>
+<body>
+   <h1>Conversor de segundos</h1>
+   <p>Horas:<span id="horas"> </span></p>
+   <p>Minutos:<span id="minutos"> </span></p>
+   <p>Segundos:<span id="segundos"> </span></p>
+   <p>total de Segundos:<span id="totalSegundos"> </span></p>
+   <script>
+    let horas = Number(prompt("Digite as Horas."));
+    let minutos = Number(prompt("Digite os Minutos."));
+    let segundos = Number(prompt("Digite os segundos."));
+    let totalSegundos = (horas * 60 * 60) + (minutos *60) + segundos
+    
+    document.getElementById("horas").innerHTML = horas;
+    document.getElementById("minutos").innerHTML = minutos;
+    document.getElementById("segundos").innerHTML = segundos;
+    document.getElementById("totalSegundos").innerHTML = totalSegundos;
+   </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio JS 06</title>
+</head>
+<body>
+    <h1>Total de Vendas</h1>
+    <p>nome da loja:<span id="nomeLoja"> </span></p>
+    <p>Vendas de Janeiro:<span id="janeiro"> </span></p>
+    <p>Vendas de Fevereiro:<spam id="fevereiro"> </spam></p>
+    <p>Vendas de Março:<span id="marco"> </span></p>
+    <p>Vendas de Abril:<spam id="abril"> </spam></p>
+    <p>Vendas de Maio:<span id="maio"> </span></p>
+    <p>Vendas de Junho:<span id="junho"> </span></p>
+    <p>Vendas de Julho:<span id="julho"> </span></p>
+    <p>Vendas de Agosto:<span id="agosto"> </span></p>
+    <p>Vendas de Setembro:<span id="setembro"> </span></p>
+    <p>Vendas de Outubro:<span id="outubro"> </span></p>
+    <p>Vendas de Novembro:<span id="novembro"> </span></p>
+    <p>Vendas de Dezembro:<span id="dezembro"> </span></p>
+    <p>Primeiro Semestre:<span id="semestre01"> </span></p>
+    <p>Segundo Semestre:<span id="semestre02"> </span></p>
+    <script>
+        let nomeLoja = prompt("Digite o nome da loja");
+        let janeiro = Number (prompt("Digite o Valor de Janeiro."));
+        let fevereiro = Number (prompt("Digite o valor de Fevereiro."));
+        let marco = Number (prompt("Digite o valor de Março."));
+        let abril = Number (prompt("Digite o valor de Abril."));
+        let maio = Number (prompt("Digite o valor de Maio."));
+        let junho = Number (prompt("Digite o valor de Junho."));
+        let julho = Number (prompt("Digite o valor de Julho."));
+        let agosto = Number (prompt("Digite o valor de Agosto."));
+        let setembro = Number (prompt("Digite o valor de Setembro."));
+        let outubro = Number (prompt("Digite o valor de Outubro."));
+        let novembro = Number (prompt("Digite o valor de Novembro."));
+        let dezembro = Number (prompt("Digite o valor de Dezembro."));
+        let semestre01 = janeiro + fevereiro + marco + abril + maio + junho;
+        let semestre02 = julho + agosto + setembro + outubro + novembro + dezembro;
+
+        document.getElementById("nomeLoja").innerHTML = nomeLoja;
+        document.getElementById("janeiro").innerHTML = janeiro;
+        document.getElementById("fevereiro").innerHTML = fevereiro;
+        document.getElementById("marco").innerHTML = marco;
+        document.getElementById("abril").innerHTML = abril;
+        document.getElementById("maio").innerHTML = maio;
+        document.getElementById("junho").innerHTML = junho;
+        document.getElementById("julho").innerHTML = julho;
+        document.getElementById("agosto").innerHTML = agosto;
+        document.getElementById("setembro").innerHTML = setembro;
+        document.getElementById("outubro").innerHTML = outubro;
+        document.getElementById("novembro").innerHTML = novembro;
+        document.getElementById("dezembro").innerHTML = dezembro;
+        document.getElementById("semestre01").innerHTML = semestre01;
+        document.getElementById("semestre02").innerHTML = semestre02;
+    </script>
+</body>
+</html>

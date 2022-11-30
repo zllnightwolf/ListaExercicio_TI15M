@@ -13,8 +13,8 @@
     <p>Turma: <span id="turma"> </span></p>
     <p>Nota 01:<span id="nota01"> </span></p>
     <p>Nota 02:<span id="nota02"> </span></p>
-    <p>Nota 03:</p>
-    <p>Média do Aluno:</p>
+    <p>Nota 03:<span id="nota03"> </span></p>
+    <p>Média do Aluno:<span id="media"> </span></p>
     <script>
         let nomeAluno = prompt("Digite o nome do Aluno");
         let nomeDisciplina = prompt("Digite o nome da Disciplina");
@@ -24,7 +24,13 @@
         let nota03 = Number(prompt("Digite a terceira nota"));
         let media = ((nota01 + nota02 + nota03)/3);
         
-        document.getElementById("")
+        document.getElementById("nomeAluno").innerHTML = nomeAluno;
+        document.getElementById("nomeDisciplina").innerHTML = nomeDisciplina;
+        document.getElementById("turma").innerHTML = Turma;
+        document.getElementById("nota01").innerHTML = nota01;
+        document.getElementById("nota02").innerHTML = nota02;
+        document.getElementById("nota03").innerHTML = nota03;
+        document.getElementById("media").innerHTML = media;
     </script>
 </body>
 </html>

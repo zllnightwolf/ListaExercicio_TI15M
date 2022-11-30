@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio JS 07</title>
+</head>
+<body>
+   <h1>Conta Corrente</h1>
+   <p>Nome do Corretirsta:<span id="nomeCorrentista"> </span></p>
+   <p>Nome do Banco:<span id="nomeBanco"> </span></p>
+   <p>Número da Conta:<span id="numeroConta"> </span></p>
+   <p>Saldo Disponivel:<span id="saldoDisponivel"> </span></p>
+   <script>
+    let nomeCorrentista = prompt("Digite o nome do correntista.");
+    let nomeBanco = prompt("Digite o nome do Banco");
+    let numeroConta = prompt ("Digite o numero da conta.");
+    let chequesDeb = Number(prompt("Digite o total de cheques a Debitar."));
+    let totalDinheiro = prompt("Digite o total de dinheiro.");
+    let chequesCred = Number(prompt("Digite o total de cheques a Creditar."));
+    let limite = Number(prompt("Digite o Limite do Cartão."));
+    let saldoAtual = Number(prompt("Digite o saldo atual."));
+    let saldoDisponivel = ((saldoAtual + chequesCred + limite)- chequesDeb);
+
+    document.getElementById("nomeCorrentista").innerHTML = nomeCorrentista;
+    document.getElementById("nomeBanco").innerHTML = nomeBanco;
+    document.getElementById("numeroConta").innerHTML = numeroConta;
+    document.getElementById("saldoDisponivel").innerHTML = saldoDisponivel;
+   </script> 
+</body>
+</html>
