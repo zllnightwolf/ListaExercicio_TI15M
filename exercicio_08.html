@@ -12,9 +12,10 @@
    <p>Hot Dog: R$<span id="hotdog"></span></p>
    <p>Hambúrguer: R$<span id="hamburguer"></span></p>
    <p>Cheeseburguer: R$<span id="cheeseb"> </span></p>
-   <p>Refrigerante em lata: R$<span id="refrigerante"> </span></p>
+   <p>Refrigerante em lata: R$<span id="refri"> </span></p>
    <p>Batata frita: R$<span id="batata"> </span></p>
    <p>Total: R$<span id="total"> </span></p>
+   
    <script>
         let nomeCliente = prompt("Digite o nome do cliente.");
         let hotdog = Number(prompt("Digite a Quantidade de Hot Dogs"));
@@ -24,11 +25,11 @@
         let batata = (0.80 * Number(prompt("Digite a quantidade de Batatas fritas.")));
         let total = (hotdog + hamburguer + cheeseb + refri + batata);
 
-        document.getElementById("nomecliente").innerHTML = nomeCliente;
+        document.getElementById("nomeCliente").innerHTML = nomeCliente;
         document.getElementById("hotdog").innerHTML = hotdog;
         document.getElementById("hamburguer").innerHTML = hamburguer;
         document.getElementById("cheeseb").innerHTML = cheeseb;
-        document.getElementById("refrigerante").innerHTML = refri;
+        document.getElementById("refri").innerHTML = refri;
         document.getElementById("batata").innerHTML = batata;
         document.getElementById("total").innerHTML = total;
    </script> 
